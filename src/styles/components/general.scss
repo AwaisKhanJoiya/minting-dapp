@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 body {
   @apply p-6;
   @apply min-h-screen;
 
   @apply font-sans;
   @apply text-neutral-800;
-  @apply bg-gradient-to-b from-neutral-100 via-neutral-100 to-neutral-200;
+  background-color: black;
 }
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   @apply font-semibold;
   @apply text-primary-600;
 
@@ -24,10 +27,11 @@ main {
   @apply flex flex-col;
 }
 
-#logo {
+.logo {
   @apply m-auto;
-  @apply w-full;
-  @apply max-w-md;
+  font-size: 40px;
+  color: white;
+  font-family: "Secular One", sans-serif;
 }
 
 span.emoji {
@@ -38,7 +42,7 @@ span.emoji {
   @apply flex flex-col;
   @apply rounded-lg;
   @apply p-3;
-  
+
   @apply text-sm;
   @apply bg-error-50;
   @apply border border-error-200;
@@ -46,7 +50,7 @@ span.emoji {
   @apply text-error-500;
 
   &::before {
-    content: 'Error';
+    content: "Error";
 
     @apply font-semibold;
     @apply text-base;
@@ -74,7 +78,7 @@ button {
   @apply py-2 px-6;
 
   @apply rounded-full;
-  
+
   @apply font-semibold;
   @apply bg-popupsbg;
   @apply border border-neutral-200;
@@ -85,12 +89,12 @@ button {
   }
 
   &.primary {
-    @apply text-primarytxt;
-    @apply bg-primary-500;
+    color: black;
+    background: yellow;
     @apply border;
 
     &:hover {
-      @apply bg-primary-600;
+      background: rgb(225, 225, 4);
     }
 
     &:disabled {
@@ -103,11 +107,11 @@ button {
   }
 }
 
-input[type=text] {
+input[type="text"] {
   @apply py-2 px-4;
 
   @apply rounded-full;
-  
+
   @apply font-mono font-semibold;
   @apply text-primary-600;
   @apply bg-popupsbg;
