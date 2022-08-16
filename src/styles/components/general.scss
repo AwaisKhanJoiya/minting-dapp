@@ -106,6 +106,10 @@ button {
     }
   }
 }
+.link {
+  color: white !important;
+  font-size: 20px;
+}
 
 input[type="text"] {
   @apply py-2 px-4;
